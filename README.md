@@ -1,5 +1,5 @@
 # Blockchain-technologijos
-
+#2 1.1
 2 failai "main.cpp" ir "funkcijos.h"
 
 Naudojimas{
