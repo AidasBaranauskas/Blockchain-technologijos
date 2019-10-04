@@ -1,5 +1,5 @@
 # Blockchain-technologijos
-#2 1.1
+# 0.1.1
 2 failai "main.cpp" ir "funkcijos.h"
 
 Naudojimas{
@@ -28,3 +28,6 @@ compress_int(0/10/20/30/40, 16) -> 0/10/4/14/8, nes 20-16=4, 40- (16* 2)=8
 tada: 0/10/4/14/8 -> '0', 'a', '4', 'e', '8'
 
 Galiausiai gražinamas užhashintas "base" funkcijai "main"
+
+# 0.1.2
+Atsirado galimybė skaityti reikšmes iš failo. Ta failą reikia nurodyti programoje, pakeitus file_name reikšmę į norima txt file pilną pavadinimą (abc.txt ir pan.) arba pervadinkite txt file į "input".
