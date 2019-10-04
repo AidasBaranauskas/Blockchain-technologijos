@@ -31,3 +31,4 @@ Galiausiai gražinamas užhashintas "base" funkcijai "main"
 
 # 0.1.2
 Atsirado galimybė skaityti reikšmes iš failo. Ta failą reikia nurodyti programoje, pakeitus file_name reikšmę į norima txt file pilną pavadinimą (abc.txt ir pan.) arba pervadinkite txt file į "input".
+Taip pat pervadintas "funkcijos.h" į "hasher.h", naujas failas "input.h" pridėtas.
