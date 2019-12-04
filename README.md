@@ -1,5 +1,16 @@
 # Blockchain-technologijos
-# 0.1.5
+# 2 (v0.1)
+Programa (bent jau man) neveiks iš pirmo bandymo. Po pirmo ar pirmų kelių bandymų, ji veiks visada be išimties. Tas lųžimas įvyksta hasher() funkcijoje ir jo konkrečios priežasties neradau.
+
+# Kaip naudotis
+Įjungti programą ir tada iškas 100 blokų (blocks_to_mine) su 3 nuliais pradžioje (difficulty_target) ir talpins jų BLOCK_HEADER naujame faile "mined blocks.txt"(file_name) = 3. Jei norite pakeisti vieną iš šių kintamųjų, teks naviguotis pagal šias instrukcijas:
+    blocks_to_mine: "main.cpp" failas, "main()" funkcija
+    difficulty_target: "struct.h" failas, "block" klasė, "block_" metodas
+    file_name: "miner.h" failas, "miner" funkcija
+
+Kasimo (po programos įjungimo) metu į konsolę išves "kasami blokai...", kas bus sekama indeksų kiekvieno  iškasto bloko.
+
+# 1.5
 "main.cpp"
 "hasher.h"
 "input_output_h"
