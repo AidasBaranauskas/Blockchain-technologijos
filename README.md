@@ -1,13 +1,27 @@
 # Blockchain-technologijos
 # 2 (v0.3) tree hasher hasher- minimum requirements
-"classes_tools.h" faile paskutinė funkcija tai "tsts_to_merkel_root_hash"
-"tsts" reiškia "transactions", tai yra tra tranzakcijų žemėlapis. Tai yra funkcijos įvestis, išvestis yra string su merkel tree hash.
+"classes_tools.h" faile paskutinė funkcija "tsts_to_merkel_root_hash"
+"tsts" reiškia "transactions", tai yra tra tranzakcijų žemėlapis, kas yra funkcijos įvestis; išvestis yra string su merkel tree hash.
 
 veikimo principas: 
 Kuomet hash'ų skaičius (tst_count) lyginis, jie poromis suhash'uojami, o tst_count padalinamas iš dviejų, nes nauji hash'ai užima tik pusę praeitų vietos ir jie talpinami pirmoje pusėje hash'ų masyvo.
 Kuomet hash'ų skaičius nėra lyginis, priklausomai nuo to, ar kintamasis "remainder" talpina hash'ą, jei talpina jis bus pridėtas prie hash'ų masyvo, jei jis tuščias bus iš masyvo perkeltas hash'as į jį, taip užtikrinant, kad visada bus lyginis skaičius hash'ų masyve.
 Veikia loop kol hash'ų skaičius masyve yra nulis.
 Jei po veikimo "remainder" talpina hash'ą, jis bus suhashintas su vieninteliu masyvo elementu.
+
+Kaip supaprastintas pavyzdys jei hash'ų masyvas yra: string hashes[7] {"h1","h2","h3","h4","h5","h6","h7"}, tai taip kis hasher masyvo ir "remainder" būsenos veikimo metu.
+
+0: 7{"h1","h2","h3","h4","h5","h6","h7"}, remainder="";
+
+h1=hasher(h1+h2),  h2=(h3+h4),  h3=(h5+h6); remainder="h7"
+1: 3{"h1","h2","h3"}; remainder="h7"
+
+2: 4{"h1","h2","h3","h7"}; remainder=""
+
+3: 2{"h1","h2"}; remainder=""
+
+4: 1{"h1"}
+
 
 # 2 (v0.2) competitive miner
 Kasimo valdymui reikia keisti reikšmes esančias "main.cpp". Čia yra jos ir jų pradinės vertės:
