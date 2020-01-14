@@ -18,6 +18,7 @@ Kaip supaprastintas pavyzdys jei hash'ų masyvas yra: string hashes[7] {"h1","h2
 0: 7{"h1","h2","h3","h4","h5","h6","h7"}, remainder="";
 
 h1=hasher(h1+h2),  h2=(h3+h4),  h3=(h5+h6); remainder="h7"
+
 1: 3{"h1","h2","h3"}; remainder="h7"
 
 2: 4{"h1","h2","h3","h7"}; remainder=""
