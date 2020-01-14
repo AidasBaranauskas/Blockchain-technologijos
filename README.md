@@ -1,4 +1,15 @@
 # Blockchain-technologijos
+# 2 (v0.2) competitive miner
+Kasimo valdymui reikia keisti reikšmes esančias "main.cpp". Čia yra jos ir jų pradinės vertės:
+    user_count=1000,- kiek naudotojų
+    transaction_count=10000,//kartais tst_count- kiek tranzakcijų
+    mining_rounds=10,- kiek kartų konkuruosis arba kiek bloku iš viso iškas
+    contender_count=5;- kiek konkurentų
+bei "struct.h" -> block -> difficulty_target = 3.
+
+Kasimo pradžioje paminės katik minėtų kintųjų pavadinimus ir vertes, neskaitant user_count
+Po kasimo praneš kiek kartų kiekvienas konkurentas laimėjo, bei kiek tranzakcijų liko. Taip pat išves visus iškastus blokus į failą "blocks_mined.txt".
+
 # 2 (v0.1)
 Programa (bent jau man) neveiks iš pirmo bandymo. Po pirmo ar pirmų kelių bandymų, ji veiks visada be išimties. Tas lųžimas įvyksta hasher() funkcijoje ir jo konkrečios priežasties neradau.
 
