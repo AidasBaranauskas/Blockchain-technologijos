@@ -1,5 +1,5 @@
 # Blockchain-technologijos
-# 2 (v0.3) tree hasher hasher- minimum requirements
+# 2 (v0.3) merkel tree hasher hasher- minimum requirements
 "classes_tools.h" faile paskutinė funkcija "tsts_to_merkel_root_hash"
 "tsts" reiškia "transactions", tai yra tra tranzakcijų žemėlapis, kas yra funkcijos įvestis; išvestis yra string su merkel tree hash.
 
