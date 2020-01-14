@@ -1,4 +1,14 @@
 # Blockchain-technologijos
+# 2 (v0.3) tree hasher hasher- minimum requirements
+"classes_tools.h" faile paskutinė funkcija tai "tsts_to_merkel_root_hash"
+"tsts" reiškia "transactions", tai yra tra tranzakcijų žemėlapis. Tai yra funkcijos įvestis, išvestis yra string su merkel tree hash.
+
+veikimo principas: 
+Kuomet hash'ų skaičius (tst_count) lyginis, jie poromis suhash'uojami, o tst_count padalinamas iš dviejų, nes nauji hash'ai užima tik pusę praeitų vietos ir jie talpinami pirmoje pusėje hash'ų masyvo.
+Kuomet hash'ų skaičius nėra lyginis, priklausomai nuo to, ar kintamasis "remainder" talpina hash'ą, jei talpina jis bus pridėtas prie hash'ų masyvo, jei jis tuščias bus iš masyvo perkeltas hash'as į jį, taip užtikrinant, kad visada bus lyginis skaičius hash'ų masyve.
+Veikia loop kol hash'ų skaičius masyve yra nulis.
+Jei po veikimo "remainder" talpina hash'ą, jis bus suhashintas su vieninteliu masyvo elementu.
+
 # 2 (v0.2) competitive miner
 Kasimo valdymui reikia keisti reikšmes esančias "main.cpp". Čia yra jos ir jų pradinės vertės:
     user_count=1000,- kiek naudotojų
